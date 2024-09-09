@@ -108,3 +108,4 @@ burgerMenu.classList.remove('is-open');
 }, 500);
 document.body.style.overflow = '';
 }
+
