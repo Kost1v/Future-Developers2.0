@@ -1,0 +1,54 @@
+<section class="contact-section" id="contact-section-id"></section>
+    <div class="container">
+      <h2 class="contact-header">
+        <span class="contact-header-text">
+          <span class="contact-header-first-line">
+            <picture class="contact-icon">
+              
+              <img class="contact-icon-img" src="./images/Work_together/logo-Work-together-min.png" alt="developer-photo" />
+            </picture>
+            Let’s <span class="highlight">work</span> 
+          </span>
+          <span>together</span>
+        </span>
+      </h2>
+      <form class="contact-form">
+        <ul class="contact-form-list">
+          <li class="contact-form-item">
+            <div class="form-field">
+              <input class="contact-input-email" type="email" name="email" id="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com" autocomplete="off" required>
+              <label class="form-field-label" for="email"></label>
+            </div>
+            <div class="form-field">
+              <input class="contact-input-comments" name="comments" type="text" id="comments" maxlength="200" placeholder="comments" autocomplete="off" required>
+              <label class="form-field-label" for="comments"></label>
+            </div>
+          </li>
+          <li class="contact-form-item">
+            <button class="contact-btn" type="submit">Send</button>
+          </li>
+        </ul>
+      </form>
+      <address class="contact-info">
+        <ul class="contact-links">
+          <li class="contact-link"><a  href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
+          <li class="contact-link"><a  href="tel:+3801111111111">+380 11 1111 11 11</a></li>
+        </ul>
+      </address>
+
+
+      
+      <div class="modal-overlay visually-hidden">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="22" height="22" aria-label="modal close button">
+            <use href="../images/svg/symbol-defs.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <h3 class="modal-title"></h3>
+        <p class="modal-message"></p>
+      </div>
+      <div class="modal-backdrop visually-hidden"></div>
+    </div>
+  </section>
+
+  <script type="module" src="../js/modal.js"></script>
