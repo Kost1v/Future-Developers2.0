@@ -234,4 +234,8 @@
   .swiper-button-next {
     right: -15px;
   }
+  .swip-btn > .icon-btn-right {
+    stroke: #3b3b3b;
+    fill: #3b3b3b;
+  }
 }
