@@ -36,4 +36,3 @@ const swiper = new Swiper('.swiper-container-about', {
   touchEventsTarget: 'container',
   allowSlidePrev: false,
 });
-//hello Ostap :-)
