@@ -1,0 +1,110 @@
+/*  ========== BENEFITS STYLES  ========== */
+.benefits {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.benefits-item {
+  border-radius: 20px;
+  padding: 24px;
+  width: 344px;
+  height: 270px;
+  background-color: #242527;
+}
+
+.benefits-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: #ed3b44;
+  margin-bottom: 64px;
+}
+
+.benefits-list-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+
+.benefits-list-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.benefits-button {
+  padding: 18px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  /* font-weight: 500; */
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  width: 187px;
+  height: 55px;
+}
+
+.benefits-button:hover {
+  border: 1px solid #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .benefits-list {
+    flex-direction: row;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .benefits-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefits-list {
+    width: 680px;
+    height: 556px;
+  }
+
+  .benefits-item {
+    width: 332px;
+  }
+}
