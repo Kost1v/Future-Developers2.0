@@ -25,7 +25,7 @@ const swiper = new Swiper('.swiper-container-about', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
+    nextEl: '.swiper-button-next-about',
   },
 
   keyboard: {
