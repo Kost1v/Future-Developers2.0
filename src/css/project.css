@@ -1,7 +1,7 @@
 /* Секція Project */
 .project-section {
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 /* Заголовок секції PROJECTS*/
@@ -154,7 +154,7 @@
   /* Секція Project */
   .project-section {
     margin-top: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 96px;
   }
 
   /* Список ul */
@@ -224,7 +224,8 @@
 
   /* Секція Project */
   .project-section {
-    margin-bottom: 82px;
+    margin-top: 82px;
+    margin-bottom: 164px;
   }
 
   /* Білий фон ul + h3 + a */
