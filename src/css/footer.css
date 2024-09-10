@@ -1,4 +1,5 @@
 :root {
+<<<<<<< Updated upstream
     --black: #242527;
     --red: #ed3b44;
     --white: #fafafa;
@@ -318,9 +319,45 @@
   
   .form-field-label {
     display: flex;
+=======
+  --black: #242527;
+  --red: #ed3b44;
+  --white: #fafafa;
+  --red-hover: #d32f2f;
+  --dark-gray: #4a4a4a;
+}
+
+.highlight {
+  color: var(--red);
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section {
+    position: relative;
+    background-image: url('./images/Work_together/work-together-glass-effect-min.png');
+    background-repeat: no-repeat;
+    background-size: 728px 900px;
+    background-position-y: 0;
+    background-position-x: calc(50% + 464px);
+    margin-top: 64px;
+  }
+
+  .contact-header {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    margin-bottom: 63px;
+  }
+
+  .contact-header-text {
+    display: inline-flex;
+>>>>>>> Stashed changes
     flex-direction: column;
     gap: 4px;
   }
+<<<<<<< Updated upstream
   
   .contact-btn:hover,
   .contact-btn:focus {
@@ -347,20 +384,161 @@
   
   .modal-message {
     color: rgba(250, 250, 250, 0.6);
+=======
+
+  .contact-header-first-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .contact-icon-img {
+    border-radius: 12px;
+  }
+
+  .contact-icon {
+    width: 44px;
+    height: 44px;
+    display: block;
+  }
+
+  .contact-header {
+    color: #fafafa;
+>>>>>>> Stashed changes
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: -0.32px;
   }
+<<<<<<< Updated upstream
   
   .modal-close-icon {
     fill: var(--white);
+=======
+
+  .contact-header {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    margin-bottom: 63px;
+  }
+
+  .contact-input-email,
+  .contact-input-comments {
+    background-color: transparent;
+    resize: none;
+>>>>>>> Stashed changes
     border: none;
     background: var(--dark-gray);
   }
+<<<<<<< Updated upstream
   
   .modal-close-btn {
     display: flex;
+=======
+
+  .contact-form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contact-form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contact-btn {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 50%;
+    border: none;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 64px;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin-bottom: 32px;
+  }
+
+  .contact-link {
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    background-color: transparent;
+    padding: 10px 12px;
+    text-align: center;
+  }
+
+  .modal-overlay {
+    border-radius: 20px;
+    padding: 64px 32px;
+    text-align: center;
+    width: 343px;
+    height: 276px;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999999;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .modal-backdrop {
+    content: '';
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    position: fixed; /* Position relative to the viewport */
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section {
+    background-image: url('./images/Work_together/work-together-glass-effect-min.png');
+    background-repeat: no-repeat;
+    background-size: 728px 900px;
+    background-position-y: 0;
+    background-position-x: calc(50% + 559px);
+    margin-top: 164px;
+  }
+
+  .contact-header {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+  }
+
+  .contact-header-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+
+  .contact-header-first-line {
+    display: inline-flex;
+>>>>>>> Stashed changes
     align-items: center;
     justify-content: center;
     background: var(--dark-gray);
@@ -377,6 +555,7 @@
   }
 
 
+<<<<<<< Updated upstream
 
 
   /* Анимация заголовка  */
@@ -387,6 +566,16 @@
     transition: opacity 1s ease, color 1s ease;
 
 
+=======
+@media screen and (min-width: 1440px) {
+  .contact-section {
+    padding: 0 164px;
+    background-image: url('./images/Work_together/work-together-glass-effect-min.png');
+    background-repeat: no-repeat;
+    background-size: 728px 900px;
+    background-position-y: 0;
+    background-position-x: calc(50% + 682px);
+>>>>>>> Stashed changes
   }
 
   
@@ -404,6 +593,7 @@
     transition: opacity 1.5s ease, color 1.5s ease 1.5s; 
     color: white; 
   }
+<<<<<<< Updated upstream
   
   .contact-header.active .highlight {
     opacity: 1;
@@ -424,3 +614,125 @@
     transform: translateY(0);
   }
   
+=======
+}
+
+/* .contact-input-email:hover,
+.contact-input-comments:hover {
+  border: 1px solid var(--white);
+} */
+
+.contact-input-email:focus,
+.contact-input-comments:focus {
+  border-color: var(--black);
+  
+}
+
+.form-field-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: var(--red-hover);
+}
+
+.contact-link {
+  font-style: normal;
+  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  border: 1px solid rgba(230, 214, 214, 0.886) ;
+  box-shadow: 0 0 8px white;
+}
+
+.modal-title {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
+}
+
+.modal-message {
+  color: rgba(250, 250, 250, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.32px;
+}
+
+.modal-close-icon {
+  fill: var(--white);
+  border: none;
+  background: var(--dark-gray);
+}
+
+.modal-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-gray);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 3px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.button-next1 .arrow-icon1,
+.button-prev1 .arrow-icon1 {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #fafafa;
+  width: 24px;
+  height: 24px;
+  transition: stroke 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    drop-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-next1,
+.button-prev1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-next1:disabled,
+.button-prev1:disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+.button-next1:disabled .arrow-icon1,
+.button-prev1:disabled .arrow-icon1 {
+  stroke: #3b3b3b;
+}
+.button-next1:hover:not(:disabled),
+.button-prev1:hover:not(:disabled) {
+  border-color: white;
+  background-color: transparent;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.button-next1:hover:not(:disabled) .arrow-icon1,
+.button-prev1:hover:not(:disabled) .arrow-icon1 {
+  stroke: white;
+  filter: drop-shadow(0 0 8px white);
+}
+>>>>>>> Stashed changes
