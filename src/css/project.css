@@ -17,9 +17,8 @@
 
 /* Білий фон ul + h3 + a */
 .background-white {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 24px 24px 0px 0px;
-
 }
 
 /* Список ul */
@@ -40,8 +39,7 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  color: #1C1D20;
-
+  color: #1c1d20;
 }
 
 /* h3 текст */
@@ -50,15 +48,15 @@
   font-size: 24px;
   line-height: 117%;
   letter-spacing: -0.03em;
-  color: #1C1D20;
+  color: #1c1d20;
   padding: 0px 32px 32px 32px;
 }
 
 /* Проєктне посилання на Git */
 .project-link {
   display: inline-block;
-  background-color: #ED3B44;
-  color: #FAFAFA;
+  background-color: #ed3b44;
+  color: #fafafa;
   font-size: 16px;
   letter-spacing: -0.02em;
   border-radius: 60px;
@@ -150,7 +148,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   /* Секція Project */
   .project-section {
     margin-top: 48px;
@@ -221,7 +218,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-
   /* Секція Project */
   .project-section {
     margin-top: 82px;

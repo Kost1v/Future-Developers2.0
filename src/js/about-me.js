@@ -8,8 +8,6 @@ const accordion = new Accordion('.about-me-list', {
 
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
 
 const swiper = new Swiper('.swiper-container-about', {
   modules: [Navigation, Keyboard],
