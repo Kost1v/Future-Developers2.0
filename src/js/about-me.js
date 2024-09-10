@@ -2,7 +2,7 @@ import Accordion from 'accordion-js';
 
 const accordion = new Accordion('.about-me-list', {
    duration: 300,
-  showMultiple: false,
+  showMultiple: true,
   openOnInit: [0],
 });
 
