@@ -19,6 +19,7 @@
   @media screen and (max-width: 767px){
     .contact-section {
       background: url('../images/hero/Hero-mobile-min.png') top right no-repeat;
+      margin-top: 64px;
     }
 
     .contact-header {
@@ -159,7 +160,9 @@
   
   @media screen and (min-width: 768px) {
     .contact-section {
-      background: url('../images/hero/Hero-tablet-min.png') top right no-repeat;
+      
+      background: url('../images/hero/Hero-desktop-min.png') cover top right no-repeat;
+      margin-top: 164px;
     }
   
     .contact-header {
@@ -371,5 +374,53 @@
   
   body.modal-open {
     overflow: hidden;
+  }
+
+
+
+
+  /* Анимация заголовка  */
+
+  .contact-header {
+    opacity: 0;
+    color: black; 
+    transition: opacity 1s ease, color 1s ease;
+
+
+  }
+
+  
+  .highlight {
+    display: inline-block;
+    opacity: 0;
+    color: black; 
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease, color 1s ease 1s; 
+  }
+  
+  
+  .contact-header.active {
+    opacity: 1;
+    transition: opacity 1.5s ease, color 1.5s ease 1.5s; 
+    color: white; 
+  }
+  
+  .contact-header.active .highlight {
+    opacity: 1;
+    color: #ed3b44; 
+    transform: translateY(0);
+  }
+  
+  .contact-header-text {
+    opacity: 0;
+    color: black; 
+    transform: translateY(30px);
+    transition: opacity 1s ease 1.5s, transform 1.5s ease 1.5s, color 1.5s ease 1.5s; 
+  }
+  
+  .contact-header.active .contact-header-text {
+    opacity: 1;
+    color: white; 
+    transform: translateY(0);
   }
   
