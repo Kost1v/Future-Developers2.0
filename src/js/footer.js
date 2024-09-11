@@ -151,6 +151,26 @@ function closeModal() {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector('.contact-header');
+
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        header.classList.add('active'); 
+        observer.unobserve(header); 
+      }
+    });
+  }, {
+    threshold: 0.5 
+  });
+
+  observer.observe(header);
+});
+
+
+
 // анимация заголовка //
 
 
