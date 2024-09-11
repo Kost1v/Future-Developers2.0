@@ -12,7 +12,7 @@
 
 .contact-section {
   position: relative;
-  background-image: url('./images/Work_together/work-together-glass-effect-min.png');
+  background-image: url('/images/Work_together/work-together-glass-effect-min.png');
   background-repeat: no-repeat;
   background-size: 728px 900px;
   background-position-y: 0;
@@ -156,7 +156,7 @@
 
 @media screen and (min-width: 768px) {
   .contact-section {
-    background-image: url('./images/Work_together/work-together-glass-effect-min.png');
+    /* background-image: url('/images/Work_together/work-together-glass-effect-min.png'); */
     background-repeat: no-repeat;
     background-size: 728px 900px;
     background-position-y: 0;
@@ -291,7 +291,7 @@
 @media screen and (min-width: 1440px) {
   .contact-section {
     padding: 0 164px;
-    background-image: url('./images/Work_together/work-together-glass-effect-min.png');
+    /* background-image: url('./images/Work_together/work-together-glass-effect-min.png'); */
     background-repeat: no-repeat;
     background-size: 728px 900px;
     background-position-y: 0;
@@ -306,11 +306,6 @@
   .contact-form-list {
     gap: 86px;
   }
-
-  /* .contact-input-email:hover,
-.contact-input-comments:hover {
-  border: 1px solid var(--white);
-} */
 
   .contact-input-email:focus,
   .contact-input-comments:focus {

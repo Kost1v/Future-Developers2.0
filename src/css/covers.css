@@ -24,9 +24,8 @@
   position: absolute;
   right: -800px;
   left: 0;
-  /* overflow: hidden; */
   height: 508px;
-  background-image: url('./images/covers/covers-fon-img-min.png');
+  background-image: url('/images/covers/covers-fon-img-min.png');
   background-position: left;
 }
 
