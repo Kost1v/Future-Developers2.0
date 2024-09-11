@@ -9,7 +9,7 @@ const accordion = new Accordion('.about-me-list', {
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 
-const swiper = new Swiper('.swiper-container-about', {
+const swiperAbout = new Swiper('.swiper-container-about', {
   modules: [Navigation, Keyboard],
   loop: true,
   slidesPerView: 2,
