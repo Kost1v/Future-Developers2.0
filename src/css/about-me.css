@@ -137,10 +137,18 @@
   letter-spacing: -0.02em;
 }
 
+.swip-wrap {
+  display: flex;
+  gap: 55px;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+}
+
 .swiper-button-next-about {
   cursor: pointer;
   right: 0;
-  top: 35%;
+  top: 30px;
   position: absolute;
   width: 50px;
   height: 70px;
@@ -149,19 +157,18 @@
   content: '';
   color: transparent;
 }
-.swip-wrap {
-  display: flex;
-  gap: 55px;
-  align-items: center;
-  background-color: transparent;
-  position: relative;
-}
-.swip-btn {
+.swip-wrap > .swip-btn {
   width: 28px;
   height: 28px;
   background-color: transparent;
   border: none;
+  border-radius: 50%;
   margin-right: 5px;
+  line-height: 0;
+}
+.swip-btn > .icon-btn-right {
+  fill: transparent;
+  stroke: #3b3b3b;
 }
 
 @media screen and (min-width: 768px) {
@@ -193,14 +200,15 @@
     gap: 64px;
   }
   .swiper-button-next-about {
-    right: -10px;
+    top: 65px;
+    right: 5px;
   }
-  .swip-btn {
+  .swip-wrap > .swip-btn {
     width: 40px;
     height: 40px;
     margin-right: 7px;
   }
-  .icon-btn-right {
+  .swip-btn > .icon-btn-right {
     width: 40px;
     height: 40px;
   }
@@ -237,10 +245,6 @@
     gap: 72px;
   }
   .swiper-button-next-about {
-    right: -15px;
-  }
-  .swip-btn > .icon-btn-right {
-    stroke: #3b3b3b;
-    fill: #3b3b3b;
+    right: 8px;
   }
 }

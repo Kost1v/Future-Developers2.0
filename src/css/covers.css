@@ -1,30 +1,29 @@
-
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .section-covers {
-    padding: 32px 0;
-    overflow: hidden;
+  padding: 32px 0;
+  overflow: hidden;
 }
 
 .covers {
-    position: relative;
-    height: 572px;
-    overflow: hidden;
+  position: relative;
+  height: 572px;
+  overflow: hidden;
 }
 
 .marquee {
     position: absolute;
     right: -800px;
-    left: -150px;
+    left: 0;
     /* overflow: hidden; */
     height: 508px;
     background-image: url("../images/covers/covers-fon-img-min.png");
@@ -33,79 +32,76 @@
 }
 
 .marquee__inner {
-    display: flex;
-    box-sizing: border-box;
-    transform: rotate(17deg);
+  display: flex;
+  box-sizing: border-box;
+  transform: rotate(17deg);
 }
 
 .marquee__line-img {
-    box-sizing: border-box;
-    max-width: 282px;
-    width: 282px;
-    height: 162px;
+  box-sizing: border-box;
+  max-width: 282px;
+  width: 282px;
+  height: 162px;
 }
 
 .first {
-    padding-left: 200px;
+  padding-left: 200px;
 }
 
 .third {
-    padding-left: 80px;
+    padding-left: 70px;
 }
 
 .fourth {
-    padding-left: 150px;
+    padding-left: 50px;
 }
 
 .marquee__line {
-    animation-name: marqueeLine;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    margin: 16px;
-    animation-play-state: paused;
-
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  margin: 16px;
+  animation-play-state: paused;
 }
 
 @keyframes marqueeLine {
-    from {
-        transform: translateX(-20%);
-    }
+  from {
+    transform: translateX(-20%);
+  }
 
-    to {
-        transform: translateX(-180%);
-    }
+  to {
+    transform: translateX(-180%);
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .section-covers {
-        padding: 48px 0;
-    }
+  .section-covers {
+    padding: 48px 0;
+  }
 
-    .covers {
-        height: 1056px;
+  .covers {
+    height: 1056px;
+  }
 
-    }
+  .marquee {
+    right: -1200px;
+    height: 960px;
+    background-position: center;
+  }
 
-    .marquee {
-        right: -1200px;
-        height: 960px;
-        background-position: center;
-    }
+  .marquee__line-img {
+    width: 544px;
+    height: 314px;
+    max-width: 544px;
+  }
 
-
-    .marquee__line-img {
-        width: 544px;
-        height: 314px;
-        max-width: 544px;
-    }
-
-    .marquee__line {
-        margin: 30px;
-    }
+  .marquee__line {
+    margin: 30px;
+  }
 
     .first {
-        padding-left: 400px;
+        padding-left: 370px;
     }
 
     .second {
@@ -113,12 +109,12 @@
     }
 
     .third {
-        padding-left: 200px;
+        padding-left: 100px;
     }
 
 
     .fourth {
-        padding-left: 350px;
+        padding-left: 90px;
     }
 
 
@@ -127,7 +123,6 @@
 @media only screen and (min-width: 1440px) {
     .section-covers {
         padding: 82px 0;
-        max-width: 100%;
     }
 
 }
