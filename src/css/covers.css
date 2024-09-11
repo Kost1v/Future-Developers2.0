@@ -24,7 +24,7 @@
 .marquee {
     position: absolute;
     right: -800px;
-    left: 0;
+    left: -150px;
     /* overflow: hidden; */
     height: 508px;
     background-image: url("../images/covers/covers-fon-img-min.png");
@@ -50,11 +50,11 @@
 }
 
 .third {
-    padding-left: 70px;
+    padding-left: 80px;
 }
 
 .fourth {
-    padding-left: 50px;
+    padding-left: 150px;
 }
 
 .marquee__line {
@@ -105,7 +105,7 @@
     }
 
     .first {
-        padding-left: 370px;
+        padding-left: 400px;
     }
 
     .second {
@@ -113,12 +113,12 @@
     }
 
     .third {
-        padding-left: 100px;
+        padding-left: 200px;
     }
 
 
     .fourth {
-        padding-left: 90px;
+        padding-left: 350px;
     }
 
 
@@ -127,6 +127,7 @@
 @media only screen and (min-width: 1440px) {
     .section-covers {
         padding: 82px 0;
+        max-width: 100%;
     }
 
 }
