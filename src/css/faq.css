@@ -12,11 +12,14 @@
 }
 
 .faq-title {
+  width: 265px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #fafafa;
+  padding: 20px 10px 16px 0;
+  cursor: pointer;
 }
 
 .faq-paragraph {
@@ -24,18 +27,18 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  padding-top: 16px;
+  padding-bottom: 20px;
   color: rgba(250, 250, 250, 0.6);
 }
 
 .faq-items {
   position: relative;
-  padding: 20px 0;
-  border-top: 1px solid rgba(250, 250, 250, 0.6);
+  
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .faq-items:last-child {
-  border-bottom: 1px solid rgba(250, 250, 250, 0.6);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .modal-close {
@@ -90,15 +93,15 @@
 
   .faq-items {
     max-width: 704px;
-    padding: 32px 0;
   }
 
   .faq-title {
-    max-width: 574px;
+    width: 574px;
+    padding: 32px 0;
   }
 
   .faq-paragraph {
-    margin-bottom: 26px;
+    padding-bottom: 24px;
   }
 
   .modal-close {
@@ -112,6 +115,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 164px;
+  }
+
+  .faq-title{
+    padding: 32px 0 42px;
+  }
+
+  .faq-paragraph {
+    padding-bottom: 26px;
   }
 
   .second {
@@ -138,11 +149,11 @@
   .faq-items:nth-child(2),
   .faq-items:nth-child(3) {
     width: 50%;
-    border-right: 1px solid rgba(250, 250, 250, 0.6);
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
   }
 
   .faq-items:nth-child(3) {
-    border-bottom: 1px solid rgba(250, 250, 250, 0.6);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
 
   .faq-items:nth-child(4),
