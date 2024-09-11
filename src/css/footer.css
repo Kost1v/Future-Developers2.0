@@ -120,6 +120,9 @@
   background-color: transparent;
   padding: 10px 12px;
   text-align: center;
+  font-style: normal;
+    transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay {
@@ -137,8 +140,8 @@
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  position: fixed;
-  visibility: hidden;
+  position: absolute;
+  
 }
 
 .modal-backdrop {
@@ -150,8 +153,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  position: fixed; /* Position relative to the viewport */
-  visibility: hidden;
+  position: fixed; 
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -249,7 +252,12 @@
     flex-direction: row;
     gap: 8px;
     margin-bottom: 169px;
+    font-style: normal;
+    transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  
 
   .contact-link {
     border-radius: 60px;
@@ -378,12 +386,12 @@
   .contact-header {
     opacity: 0;
     color: black;
-    transition: opacity 1s ease, color 1s ease;
+    transition: opacity .8s ease, color .8s ease;
   }
 
   .contact-header.active {
     opacity: 1;
-    transition: opacity 1.5s ease, color 1.5s ease 1.5s;
+    transition: opacity .8s ease, color .8s ease .8s;
     color: white;
   }
 
@@ -392,7 +400,7 @@
     opacity: 0;
     color: black;
     transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease, color 1s ease 1s;
+    transition: opacity 1s ease, transform .8s ease, color .8s ease .8s;
   }
 
   .contact-header.active .highlight {
@@ -405,7 +413,7 @@
     opacity: 0;
     color: black;
     transform: translateY(30px);
-    transition: opacity 1s ease 1.5s, transform 1s ease 1.5s,
+    transition: opacity .8s ease .8s, transform .8s ease .8s,
       color 1.5s ease 1.5s;
   }
 
