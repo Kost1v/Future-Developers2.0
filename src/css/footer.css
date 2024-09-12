@@ -159,7 +159,6 @@
 
 @media screen and (min-width: 768px) {
   .contact-section {
-    /* background-image: url('/images/Work_together/work-together-glass-effect-min.png'); */
     background-repeat: no-repeat;
     background-size: 728px 900px;
     background-position-y: 0;
@@ -278,7 +277,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999999999999;
-    background: rgba(255, 255, 255, 0.2);
+    background: #1c1d20;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -299,7 +298,6 @@
 @media screen and (min-width: 1440px) {
   .contact-section {
     padding: 0 164px;
-    /* background-image: url('./images/Work_together/work-together-glass-effect-min.png'); */
     background-repeat: no-repeat;
     background-size: 728px 900px;
     background-position-y: 0;
@@ -363,14 +361,14 @@
   .modal-close-icon {
     fill: var(--white);
     border: none;
-    background: var(--dark-gray);
+    background: transparent
   }
 
   .modal-close-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--dark-gray);
+    background: transparent;
     border: none;
     border-radius: 50%;
     position: absolute;
