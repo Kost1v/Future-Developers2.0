@@ -57,11 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
           imgEl.removeAttribute('data-src');
         }
 
-            observer.unobserve(pictureEl);
+        observer.unobserve(pictureEl);
+        observer.unobserve(imgEl);
       }
     });
   });
 
   observerAbout.observe(pictureEl);
+    observerAbout.observe(imgEl);
 });
 
