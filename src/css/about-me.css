@@ -69,7 +69,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 .btn-svg-wrapper {
   display: flex;
@@ -194,7 +194,7 @@
     padding-bottom: 48px;
   }
   .about-me-item > .subtitle-about.ac-header {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
   .swip-wrap {
     gap: 64px;
@@ -229,6 +229,9 @@
     display: flex;
     gap: 16px;
     margin-bottom: 96px;
+  }
+  .text-wrapper {
+    margin-bottom: 0;
   }
   .main-text-about {
     max-width: 552px;
