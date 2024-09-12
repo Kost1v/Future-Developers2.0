@@ -18,7 +18,7 @@
     <script type="module" crossorigin src="/Future-Developers2.0/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Future-Developers2.0/assets/vendor-CXTBbynS.js">
     <link rel="stylesheet" crossorigin href="/Future-Developers2.0/assets/vendor-ClcSq75w.css">
-    <link rel="stylesheet" crossorigin href="/Future-Developers2.0/assets/index-DMmHcoyo.css">
+    <link rel="stylesheet" crossorigin href="/Future-Developers2.0/assets/index-BhanPKdq.css">
   </head>
   <body>
     <header class="header">
@@ -194,11 +194,20 @@
                 </p>
             </div>
 
-            <picture>
-                <source srcset="/Future-Developers2.0/assets/about-desktop-min-r92_10Ht.png 1x, /Future-Developers2.0/assets/abbout-desktop@2x-min-Dfphzvl1.png 2x" media="(min-width: 1440px)" width="680" height="700" />
-                <source srcset="/Future-Developers2.0/assets/about-tablet-min-BY_q_COm.png 1x, /Future-Developers2.0/assets/about-tablet@2x-min--QotLWN6.png 2x" media="(min-width: 768px)" width="704" height="700" />
-                <source srcset="/Future-Developers2.0/assets/about-mobile-min-BdiU0VSx.png 1x, /Future-Developers2.0/assets/about-mobile@2x-min-CYShiVxf.png 2x" media="(max-width: 767px)" width="343" height="500" />
-                <img class="about-photo" src="/Future-Developers2.0/assets/about-desktop-min-r92_10Ht.png" alt="Lloyd Jefferson`s foto" />
+            <picture class="about-picture">
+                <source data-srcset="
+            ./images/about/about-desktop-min.png     1x,
+            ./images/about/abbout-desktop@2x-min.png 2x
+          " media="(min-width: 1440px)" width="680" height="700" />
+                <source data-srcset="
+            ./images/about/about-tablet-min.png    1x,
+            ./images/about/about-tablet@2x-min.png 2x
+          " media="(min-width: 768px)" width="704" height="700" />
+                <source data-srcset="
+            ./images/about/about-mobile-min.png    1x,
+            ./images/about/about-mobile@2x-min.png 2x
+          " media="(max-width: 767px)" width="343" height="500" />
+                <img class="about-photo" data-src="./images/about/about-desktop-min.png" alt="Lloyd Jefferson`s foto" />
             </picture>
         </div>
 
