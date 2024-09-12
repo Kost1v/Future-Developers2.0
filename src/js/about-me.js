@@ -34,36 +34,5 @@ const swiperAbout = new Swiper('.swiper-container-about', {
   touchEventsTarget: 'container',
   allowSlidePrev: false,
 });
-const sectionAbout = document.querySelector('.section-about');
-document.addEventListener("DOMContentLoaded", function () {
-  const pictureEl = document.querySelector('.about-picture');
-  const sourceEls = document.querySelectorAll('source');
-  const imgEl = document.querySelector('.about-photo');
-  
-  const observerAbout = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-    
-        sourceEls.forEach((source) => {
-          const srcsetVal = source.getAttribute('data-srcset');
-          if (srcsetVal) {
-            source.setAttribute('srcset', srcsetVal);
-            source.removeAttribute('data-srcset');
-          }
-        });
-        const imgSrc = imgEl.getAttribute('data-src');
-        if (imgSrc) {
-          imgEl.setAttribute('src', imgSrc);
-          imgEl.removeAttribute('data-src');
-        }
 
-        observer.unobserve(pictureEl);
-        observer.unobserve(imgEl);
-      }
-    });
-  });
-
-  observerAbout.observe(pictureEl);
-    observerAbout.observe(imgEl);
-});
 
