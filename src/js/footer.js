@@ -62,6 +62,7 @@ function getContactInfo(event) {
       modalBackdrop.classList.remove("visually-hidden");
       modalBackdrop.style.display = "block";
       modalBackdropBg.classList.remove("visually-hidden");
+      modalBackdropBg.style.display = "block";
       body.classList.add("modal-open");
      
       modalTitle.textContent = data.title;
