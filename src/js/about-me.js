@@ -34,5 +34,3 @@ const swiperAbout = new Swiper('.swiper-container-about', {
   touchEventsTarget: 'container',
   allowSlidePrev: false,
 });
-
-

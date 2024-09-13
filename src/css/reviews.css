@@ -160,6 +160,41 @@
   filter: drop-shadow(0 0 8px white);
 }
 
+/* Для відзеркалення правої стрілки */
+.button-next .arrow-icon {
+  transform: scaleX(-1); /* Відзеркалюємо ліву стрілку для правої кнопки */
+}
+
+/* Стиль для неактивної кнопки (disabled) */
+.button-next:disabled .arrow-icon,
+.button-prev:disabled .arrow-icon {
+  stroke: #3b3b3b; /* Темніє іконка, коли кнопка неактивна */
+}
+
+/* Активні стилі для стрілок при наведенні */
+.button-next:hover:not(:disabled) .arrow-icon,
+.button-prev:hover:not(:disabled) .arrow-icon {
+  stroke: white;
+  filter: drop-shadow(0 0 8px white);
+}
+
+/* Базовий стиль іконок */
+.arrow-icon {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #fafafa;
+  width: 24px;
+  height: 24px;
+  transition: stroke 350ms cubic-bezier(0.4, 0, 0.2, 1), drop-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Для дизейблених стрілок */
+.button-next:disabled .arrow-icon,
+.button-prev:disabled .arrow-icon {
+  stroke: #3b3b3b; /* Стрілка темнішає при дизейблі */
+}
+
+
 .err-container {
   width: 100%;
   height: 302px;
