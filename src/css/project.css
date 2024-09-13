@@ -68,6 +68,18 @@
   /* font-weight: 500; */
 }
 
+.project-link:hover {
+  background-color: #E0373F;
+}
+
+.project-link:focus {
+  background-color: #E0373F;
+}
+
+.project-link:active {
+  background-color: #E0373F;
+}
+
 /* Темний фон для picture */
 .background-dark {
   border-radius: 0 0 24px 24px;
@@ -94,6 +106,10 @@
   gap: 12px;
   margin-bottom: 32px;
 
+}
+
+.button-next1 {
+  transform: scaleX(-1);
 }
 
 .button-next1 .arrow-icon1,
@@ -216,6 +232,7 @@
   width: 32px;
   height: 32px;
 }
+
 }
 @media screen and (min-width: 1440px) {
 
