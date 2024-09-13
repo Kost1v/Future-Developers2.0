@@ -73,6 +73,9 @@ function getContactInfo(event) {
       
       contactEmail.style.borderBottomColor = "rgba(250, 250, 250, 0.20)";
     })
+
+
+    
     .catch((error) => {
      
       return iziToast.error({
