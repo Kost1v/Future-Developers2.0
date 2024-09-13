@@ -156,7 +156,6 @@
   display: flex;
   flex-direction: row;
   gap: 4px;
-  margin-bottom: 32px;
 }
 
 .contact-link {
@@ -261,7 +260,6 @@
 
 @media screen and (min-width: 768px) {
   .contact-section {
-    /* background-image: url('/images/Work_together/work-together-glass-effect-min.png'); */
     background-repeat: no-repeat;
     background-size: 728px 679px;
     background-position-y: 0;
@@ -354,7 +352,6 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
-    margin-bottom: 169px;
     font-style: normal;
     transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -402,7 +399,7 @@
 @media screen and (min-width: 1440px) {
   .contact-section {
     padding: 0 164px;
-    /* background-image: url('./images/Work_together/work-together-glass-effect-min.png'); */
+    padding-bottom: 169px;
     background-repeat: no-repeat;
     background-size: 728px 679px;
     background-position-y: 0;
@@ -474,7 +471,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--dark-gray);
+    background: transparent;
     border: none;
     background: var(--dark-gray);
     border-radius: 50%;
