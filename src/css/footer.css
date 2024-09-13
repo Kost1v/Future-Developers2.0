@@ -92,7 +92,7 @@
   color: rgba(250, 250, 250, 0.6);
   background-color: transparent;
   resize: none;
-  border-color: transparent;
+  border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   width: 100%;
   padding-bottom: 20px;
@@ -100,7 +100,9 @@
   padding-top: 10px;
   outline: transparent;
 }
-
+.contact-form {
+  margin-bottom: 64px;
+}
 .contact-form-list {
   display: flex;
   flex-direction: column;
@@ -120,7 +122,6 @@
   border-color: transparent;
   width: 100px;
   height: 100px;
-  margin-bottom: 64px;
 }
 
 .contact-links {
@@ -260,11 +261,13 @@
   .contact-input-comments {
     width: 245px;
   }
+  .contact-form {
+    margin-bottom: 18px;
+  }
   .contact-form-list {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 78px;
   }
 
   .contact-form-item {
