@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination,Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -113,7 +113,7 @@ const swiperReview = new Swiper('.review-swiper', {
   initialSlide: 0,
   speed: 400,
   spaceBetween: 16,
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Keyboard],
   preventClicks: true,
   freeMode: false,
   slidesPerGroup: 1,
@@ -127,6 +127,10 @@ const swiperReview = new Swiper('.review-swiper', {
   keyboard: {
     enabled: true,
     onlyInViewport: false,
+  },
+  keyboard: {
+    enabled: true, 
+    onlyInViewport: true, 
   },
   breakpoints: {
     375: {
